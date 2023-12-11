@@ -10,7 +10,7 @@ public class Barbearia {
 	private double caixa;
 
 	public String proximoDaFila() {
-		fila.add(new Cliente("Francinaldo", 18, servicos.get(0), "Pix"));
+		// fila.add(new Cliente("Francinaldo", 18, servicos.get(0), "Pix"));
 		String clienteDaVez = "";
 		if (fila.isEmpty()) {
 			clienteDaVez = "Nenhum cliente na fila";
@@ -18,6 +18,10 @@ public class Barbearia {
 			clienteDaVez = fila.get(0).toString();
 		}
 		return clienteDaVez;
+	}
+
+	public Servicos getServico() {
+		return servicos.get(0);
 	}
 
 	public void servicoNaoRealizado() {
@@ -64,6 +68,10 @@ public class Barbearia {
 
 	public void setCaixa(double caixa) {
 		this.caixa = caixa;
+	}
+
+	public void addCliente(Cliente cliente) {
+		fila.add(cliente);
 	}
 
 }
