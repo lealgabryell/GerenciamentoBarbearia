@@ -18,7 +18,7 @@ public class Cliente {
 	@Override
 	public String toString() {
 		String cadeiraUtilizada = this.getIdade()>6? "Cadeira 2 ou 3":"Cadeira 1";
-		return String.format("Cliente -> %s - %s\nServico -> %s\nForma de pagamento -> %s", 
+		return String.format("Cliente -> %20s - %10s | %-20s | %10s", 
 				this.getNome(), cadeiraUtilizada, this.getServico(), this.getFormaPagamento());
 	}
 	public Servicos getServico() {

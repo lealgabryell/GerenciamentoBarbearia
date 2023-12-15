@@ -24,7 +24,6 @@ public class Barbearia {
 		return servicos.get(0);
 	}
 
-	
 	//nao adiciona dinheiro ao caixa
 	public void servicoNaoRealizado() {
 		fila.remove(0);
@@ -85,11 +84,16 @@ public class Barbearia {
 	public String metodosDePagamento(){
 		return "-Pix\n-No ato\n-Em dinheiro\n";
 	}
+	public void imprimirFila(){
+		for (Cliente c : fila) {
+			System.out.println(c.toString());
+		}
+	}
 	public void menu(){
 		System.out.println(".:.:.:.: Gustavo Braga Barbearia .:.:.:.:\n" +
 		"\t1) Marcar um servico\n" +
 		"\t2) Tabela de precos e servicos\n" +
 		"\t3) Fila do dia\n" +
-		"\t4) Sair\n");
+		"\t4) Sair\nProximo a ser atendido:\n" + proximoDaFila());
 	}
 }

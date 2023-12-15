@@ -10,7 +10,7 @@ public class Main {
 		while (true) {
 			barbearia.menu();
 			int esc = uteis.lerInteiro("Digite sua escolha: ");
-			System.out.println("\nO cliente da vez eh: " + barbearia.proximoDaFila());
+			
 			switch (esc) {
 				case 1:
 					String nome = uteis.lerString("Qual o seu nome?");
@@ -18,7 +18,7 @@ public class Main {
 					System.out.println(".:.:.:.:.:.:.:.:Servicos disponiveis:.:.:.:.:.:.:.:.:\n"
 							+ barbearia.listarServicos());
 					int escolhaDeServico = uteis.lerInteiro("Qual servico voce deseja escolher?");
-					escolhaDeServico-=1;
+					escolhaDeServico -= 1;
 					System.out.println("\n" + barbearia.metodosDePagamento());
 					String formaDePagamento = uteis.lerString("Qual sera sua forma de pagamento?");
 					switch (escolhaDeServico) {
@@ -66,25 +66,18 @@ public class Main {
 							+ barbearia.getUltimoAdicionado().getServico().getServico() + " foi agendado com sucesso!");
 					break;
 				case 2:
+					System.out.println(barbearia.listarServicos());
 					break;
 				case 3:
+					barbearia.imprimirFila();
 					break;
 				case 4:
+				System.exit(0);
 					break;
 				default:
 					System.out.println("Digite uma opcao valida!");
 					break;
 			}
-
-			// barbearia.adicionarServicos();
-			// System.out.println(".:.:.:.:.:.:.:.:Servicos disponiveis:.:.:.:.:.:.:.:.:\n"
-			// + barbearia.listarServicos());
-			// Cliente cliente = new Cliente("Francinaldo", 18, barbearia.getServico(),
-			// "Pix");
-			// barbearia.addCliente(cliente);
-			// System.out.println(barbearia.proximoDaFila());
-			// barbearia.servicoConcluido();
-			// System.out.println(barbearia.proximoDaFila());
 		}
 	}
 }
