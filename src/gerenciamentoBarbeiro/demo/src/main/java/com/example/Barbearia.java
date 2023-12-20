@@ -1,4 +1,4 @@
-package gerenciamentoBarbeiro;
+package gerenciamentoBarbeiro.demo.src.main.java.com.example;
 
 import java.util.ArrayList;
 import java.util.List;

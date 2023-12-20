@@ -1,4 +1,4 @@
-package gerenciamentoBarbeiro;
+package gerenciamentoBarbeiro.demo.src.main.java.com.example;
 
 public class Servicos {
 	
