@@ -21,7 +21,7 @@ public class Servicos {
 	}
 	@Override
 	public String toString() {
-		return String.format("%-18s - R$%.2f", this.getServico(), this.getValor());
+		return String.format("%s - R$%.2f", this.getServico(), this.getValor());
 	}
 	public String getServico() {
 		return servico;

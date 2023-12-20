@@ -64,7 +64,9 @@ public class Barbearia {
 		}
 		return servicosConcat;
 	}
-
+	public int getTamanhoDaFila(){
+		return fila.size();
+	}
 	public double getCaixa() {
 		return caixa;
 	}

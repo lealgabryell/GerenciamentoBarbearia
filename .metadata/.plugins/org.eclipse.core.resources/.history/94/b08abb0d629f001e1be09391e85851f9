@@ -10,7 +10,7 @@ public class Main {
 		while (true) {
 			barbearia.menu();
 			int esc = uteis.lerInteiro("Digite sua escolha: ");
-
+			
 			switch (esc) {
 				case 1:
 					String nome = uteis.lerString("Qual o seu nome?");
@@ -69,11 +69,10 @@ public class Main {
 					System.out.println(barbearia.listarServicos());
 					break;
 				case 3:
-					System.out.println("Fila de clientes do dia:\n");
 					barbearia.imprimirFila();
 					break;
 				case 4:
-					System.exit(0);
+				System.exit(0);
 					break;
 				default:
 					System.out.println("Digite uma opcao valida!");
